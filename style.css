@@ -1,0 +1,347 @@
+/* Paleta de Cores:
+    Roxo: #5b1d99
+    Azul Escuro: #0074b4
+    Verde: #00b34c
+    */
+
+    /* Mobile */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body{
+    background-image: url(imagens/fundo.png);
+    font-family: 'Poppins', sans-serif;
+    color: #0074b4;
+}
+
+
+#imgPerfil{
+    width: 35%;
+    border-radius: 700px;
+    border: 5px solid #0074b4;
+    box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.4);
+}
+header{
+    width: 80%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) brightness(100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    margin: 2% 4%;
+    display: flex;         /* Ativa o modo flexível */
+    align-items: center;   /* Alinha a imagem e o texto verticalmente pelo centro */
+    gap: 10px;            /* Cria um espaço entre a imagem e o texto */
+    padding: 20px;
+    justify-content: center;
+}
+#textoPerfil h1, #textoPerfil h2{
+    margin: 2% 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    font-size:small;
+    padding: 1%;
+}
+#textoPerfil h2{
+    font-size: 10px;
+}
+#textoPerfil{
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 2% 0.5%;
+    transition: transform 0.2s ease;
+}
+#textoPerfil:hover{
+    transform: scale(1.025);
+}
+.conteudo{
+    width: 80%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 2% 10%;
+    transition: transform 0.2s ease;
+}
+
+.conteudo:hover{
+    transform: scale(1.025);
+
+}
+
+.conteudo h2{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    font-size: small;
+    margin-left: 2%;
+
+}
+.conteudo p, .conteudo ul{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    margin-left: 5%;
+    font-size: small;
+}
+
+.divisoes{
+    width: 90%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) brightness(100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    margin: 2% 4%;
+
+}
+
+.btn_download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  font-size: small;
+}
+.introducao{
+    width: 80%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin: 2% 10%;
+}
+.introducao h1{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color:  rgb(2, 60, 92);
+    font-size: 12px;
+
+}
+
+footer img{
+    width: 8%;
+    height: 8%;
+}
+footer{
+    text-decoration: none;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin: 2% 10%;
+
+    display: flex;
+    flex-direction: column; /* Empilha as Redes Sociais em cima e Copyright embaixo */
+    align-items: center;    /* Centraliza tudo horizontalmente */
+    gap: 20px;          /* Espaço entre as redes e o copyright */
+
+    font-size: small;
+}
+#redes_sociais{
+    display: flex;          /* Faz o Insta e o Whats ficarem lado a lado */
+    flex-direction: row;    /* Garante a linha (padrão do flex) */
+    gap: 10px;
+    margin-left: 2%;
+    align-items: center;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#redes_sociais a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8% 0.8%;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#redes_sociais a:hover {
+  background-color: white;
+  color: #222;
+}
+.copyright{
+    margin-top: 1%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+/* Para Desktop*/
+@media screen and (min-width: 768px) {
+    
+
+#imgPerfil{
+    width: 20%;
+    border-radius: 700px;
+    border: 5px solid #0074b4;
+    box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.4);
+}
+header{
+    width: 90%;
+    min-height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) brightness(100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    margin: 2% 4%;
+    display: flex;         /* Ativa o modo flexível */
+    align-items: center;   /* Alinha a imagem e o texto verticalmente pelo centro */
+    gap: 20px;            /* Cria um espaço entre a imagem e o texto */
+    padding: 20px;
+    justify-content: center;
+}
+#textoPerfil h1, #textoPerfil h2{
+    margin: 1% 0;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+#textoPerfil h1{
+    font-size: 36px;
+}
+#textoPerfil h2{
+    font-size:24px;
+}
+#textoPerfil{
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 2% 1%;
+    transition: transform 0.2s ease;
+}
+#textoPerfil:hover{
+    transform: scale(1.025);
+}
+.conteudo{
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin: 2% 10%;
+    transition: transform 0.2s ease;
+}
+
+.conteudo:hover{
+    transform: scale(1.025);
+
+}
+
+.conteudo h2{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+    font-size: 24px;
+
+}
+.conteudo p, .conteudo ul{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    margin-left: 2%;
+    font-size: large;
+}
+
+.divisoes{
+    width: 90%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px) brightness(100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    margin: 2% 4%;
+
+}
+
+.btn_download {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff; /* Azul */
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+}
+
+.btn_download:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+.introducao{
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin: 2% 10%;
+  
+}
+.introducao h1{
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    color:  rgb(2, 60, 92);
+    font-size: 24px;
+
+}
+
+footer img{
+    width: 4%;
+    height: 4%;
+}
+footer{
+    text-decoration: none;
+    width: 80%;
+    height: 20%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px) brightness(120%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    margin: 2% 10%;
+
+    display: flex;
+    flex-direction: column; /* Empilha as Redes Sociais em cima e Copyright embaixo */
+    align-items: center;    /* Centraliza tudo horizontalmente */
+    gap: 20px;          /* Espaço entre as redes e o copyright */
+}
+#redes_sociais{
+    display: flex;          /* Faz o Insta e o Whats ficarem lado a lado */
+    flex-direction: row;    /* Garante a linha (padrão do flex) */
+    gap: 15px;
+    align-items: center;
+    justify-content:center;
+}
+#redes_sociais a{
+    text-decoration: none;
+  color: white;
+  padding: 1% 1%;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+#redes_sociais a:hover {
+  background-color: white;
+  color: #222;
+}
+}
