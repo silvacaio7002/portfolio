@@ -179,6 +179,23 @@ footer{
     text-align: center;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
+.hidden-section{
+    opacity: 0;
+    filter: blur(8px); /* Um pouco mais de desfoque para suavizar */
+    transform: translateY(80px); /* Começa um pouco mais de baixo */
+    transition: 
+        opacity 1.8s ease-in-out, 
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        filter 1.5s ease;
+}
+.show-section{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+.formacao.hidden-section {
+    transition-delay: 2s;
+}
 /* Para Desktop*/
 @media screen and (min-width: 768px) {
     
@@ -344,4 +361,5 @@ footer{
   background-color: white;
   color: #222;
 }
+
 }
