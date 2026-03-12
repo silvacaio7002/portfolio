@@ -58,7 +58,6 @@
             font-family: monospace;
             font-size: 2rem;
             overflow: hidden; 
-            border-right: .15em solid var(--cor-1); /* O cursor */
             white-space: nowrap; 
             margin: 0 auto; 
             animation: 
@@ -436,3 +435,4 @@ footer{
     transition-delay: 0.5s;
 
 }
+
