@@ -12,8 +12,69 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #0074b4;
 }
+:root {
+            /* DEFINIÇÃO DAS VARIÁVEIS DE COR */
+            
+            /* Tons de Azul */
+            --azul-claro: #73bced;
+            --azul-medio: #437fd7;
+            --azul-escuro: #153fbe;
+            
+            /* Tons de Vermelho */
+            --roxo-suave: #934bdb;
+            --roxo-vibrante: #6d25b5;
+            --roxo-profundo: #4f118c;
+            
+            /* Branco/Neutro */
+            --branco-puro: #ffffff;
+            --branco-gelo: #f0f5ff; /* Um branco com leve toque azul */
+    
+        }
 
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            /* CONSTRUÇÃO DO MESH GRADIENT */
+            /* Usamos radial-gradient sobrepostos em posições diferentes */
+            background-color: var(--branco-gelo); /* Cor de fundo base */
+            background-image: 
+                radial-gradient(at 10% 10%, var(--azul-claro) 0, transparent 40%),
+                radial-gradient(at 90% 10%, var(--roxo-suave) 0, transparent 40%),
+                radial-gradient(at 50% 50%, var(--branco-puro) 0, transparent 60%), /* Ponto de branco central */
+                radial-gradient(at 10% 90%, var(--roxo-vibrante) 0, transparent 50%),
+                radial-gradient(at 90% 90%, var(--azul-medio) 0, transparent 50%),
+                radial-gradient(at 30% 60%, var(--azul-escuro) 0, transparent 30%), /* Ponto escuro mais sutil */
+                radial-gradient(at 70% 30%, var(--roxo-profundo) 0, transparent 30%); /* Ponto profundo mais sutil */
+            background-attachment: fixed;
+            background-size: 200% 200%; /* Aumenta o tamanho para animação */
+            animation: meshAnimation 20s ease infinite; /* Adiciona movimento */
+        }
+                /* ANIMAÇÃO DO MESH GRADIENT */
+        @keyframes meshAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
+.typewriter {
+            font-family: monospace;
+            font-size: 2rem;
+            overflow: hidden; 
+            border-right: .15em solid var(--cor-1); /* O cursor */
+            white-space: nowrap; 
+            margin: 0 auto; 
+            animation: 
+                typing 3s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 60% }
+        }
 #imgPerfil{
     width: 35%;
     border-radius: 700px;
@@ -361,6 +422,7 @@ footer{
   background-color: white;
   color: #222;
 }
+}
 .hidden-section{
     opacity: 0;
     filter: blur(8px); /* Um pouco mais de desfoque para suavizar */
@@ -378,6 +440,3 @@ footer{
 .formacao.hidden-section {
     transition-delay: 0.5s;
 }
-
-}
-

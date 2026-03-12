@@ -49,5 +49,4 @@ const observer = new IntersectionObserver((entries) => {
     hiddenElements.forEach((el) => observer.observe(el));
 // Certifique-se de que o ID no HTML é exatamente "exibirIdade"
 document.getElementById("exibirIdade").innerText += " " + IdadeAtual() + " anos";
-
 document.getElementById("Resposta").innerText +=" "+ Comprimento()+", venha conferir meu Portfólio por favor";
