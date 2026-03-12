@@ -7,11 +7,6 @@
     /* Mobile */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-body{
-    background-image: url(imagens/fundo.png);
-    font-family: 'Poppins', sans-serif;
-    color: #0074b4;
-}
 :root {
             /* DEFINIÇÃO DAS VARIÁVEIS DE COR */
             
@@ -35,7 +30,7 @@ body{
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             
             /* CONSTRUÇÃO DO MESH GRADIENT */
             /* Usamos radial-gradient sobrepostos em posições diferentes */
@@ -439,4 +434,5 @@ footer{
 }
 .formacao.hidden-section {
     transition-delay: 0.5s;
+
 }
