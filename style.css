@@ -52,22 +52,6 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-
-.typewriter {
-            font-family: monospace;
-            font-size: 2rem;
-            overflow: hidden;
-            white-space: nowrap; 
-            margin: 0 auto; 
-            animation: 
-                typing 3s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 60% }
-        }
 #imgPerfil{
     width: 35%;
     border-radius: 700px;
@@ -217,15 +201,15 @@ footer{
 }
 #redes_sociais a{
     text-decoration: none;
-    color: white;
+    color: rgb(82, 82, 82);
     padding: 0.8% 0.8%;
-    border: 1px solid white;
+    border: 1px solid rgb(82, 82, 82);
     border-radius: 5px;
     transition: 0.3s;
 }
 
 #redes_sociais a:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   color: #222;
 }
 .copyright{
@@ -254,6 +238,21 @@ footer{
 @media screen and (min-width: 768px) {
     
 
+    .typewriter {
+            font-family: monospace;
+            font-size: 2rem;
+            overflow: hidden;
+            white-space: nowrap; 
+            margin: 0 auto; 
+            animation: 
+                typing 3s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 60% }
+        }
 #imgPerfil{
     width: 20%;
     border-radius: 700px;
@@ -404,9 +403,9 @@ footer{
 }
 #redes_sociais a{
     text-decoration: none;
-  color: white;
+  color: rgb(82, 82, 82);
   padding: 1% 1%;
-  border: 1px solid white;
+  border: 1px solid rgb(83, 83, 83);
   border-radius: 5px;
   transition: 0.3s;
 }
